@@ -422,6 +422,16 @@ export interface BoxProps_ extends StyledProps {
   overflowX?: 'auto' | 'hidden' | 'visible' | 'scroll'
   overflowY?: 'auto' | 'hidden' | 'visible' | 'scroll'
 
+  d?:
+    | 'block'
+    | 'flex'
+    | 'flow-root'
+    | 'grid'
+    | 'inline-block'
+    | 'inline-flex'
+    | 'inline-grid'
+    | 'inline'
+    | 'none'
   display?:
     | 'block'
     | 'flex'
@@ -637,9 +647,9 @@ export const Box_ = styled('div')<BoxProps_>`
 
   align-items: #or($alignItems, $items);
   align-content: $alignContent;
-  justify-content: ($justifyItems, $justifyContent, $justify);
+  justify-content: #or($justifyItems, $justifyContent, $justify);
   flex-wrap: #or($flexWrap, $wrap);
-  flex-direction: ($flexDirection, $direction);
+  flex-direction: #or($flexDirection, $direction);
   flex: $flex;
   flex-grow: $flexGrow;
   flex-shrink: $flexShrink;
