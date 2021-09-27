@@ -1,3 +1,4 @@
+import React from 'react'
 import { Flui } from '@fluido/ui'
 import { ClusterProps_, Cluster_ } from './styled'
 

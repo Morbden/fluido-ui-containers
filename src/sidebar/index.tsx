@@ -1,3 +1,4 @@
+import React from 'react'
 import { Flui } from '@fluido/ui'
 import { SidebarProps_, Sidebar_ } from './styled'
 

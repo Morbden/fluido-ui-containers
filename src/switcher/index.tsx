@@ -1,3 +1,4 @@
+import React from 'react'
 import { Flui } from '@fluido/ui'
 import { SwitcherProps_, Switcher_ } from './styled'
 

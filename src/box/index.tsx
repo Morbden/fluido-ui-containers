@@ -1,3 +1,4 @@
+import React from 'react'
 import { Flui, tryParseColor, TypedMap } from '@fluido/ui'
 import { BoxProps_, Box_ } from './styled'
 
