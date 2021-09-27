@@ -1,0 +1,54 @@
+{
+  "name": "@fluido/ui-containers",
+  "version": "0.4.1-beta.10",
+  "license": "MIT",
+  "private": false,
+  "description": "A framework for create front-end easy and fast",
+  "keywords": [
+    "fluido",
+    "front-end",
+    "styled",
+    "styled-components",
+    "goober",
+    "chakra",
+    "react",
+    "framework",
+    "layout"
+  ],
+  "author": {
+    "email": "morbden.dev@gmail.com",
+    "name": "Morbden"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Morbden/fluido-ui-containers"
+  },
+  "main": "dist/index.js",
+  "types": "types/index.js",
+  "scripts": {
+    "dev": "run-p dev:common dev:esm",
+    "dev:common": "tsc -w",
+    "dev:esm": "tsc --build tsconfig.esm.json -w",
+    "build": "run-s clear build:common build:esm",
+    "clear": "rimraf common esm types",
+    "build:common": "tsc",
+    "build:esm": "tsc --build tsconfig.esm.json",
+    "pub": "npm publish --access public",
+    "pub:beta": "npm publish --access public --tag beta",
+    "pub:alpha": "npm publish --access public --tag alpha",
+    "pub:all": "run-s build pub"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=16.8.0 <=17.x.x",
+    "react-dom": ">=16.8.0 <=17.x.x",
+    "@fluido/ui": "^latest"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.1",
+    "@types/react": "^17.0.24",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.3"
+  }
+}
