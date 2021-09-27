@@ -478,6 +478,8 @@ export interface BoxProps_ extends StyledProps {
   fillColor?: string
   strokeColor?: string
 
+  sticky?: boolean
+
   gradient?: string[] | string
   gradientType?:
     | 'linear-gradient'
@@ -646,4 +648,9 @@ export const Box_ = styled('div')<BoxProps_>`
   justify-self: $justifySelf;
   align-self: $alignSelf;
   order: $order;
+
+  #if($sticky) {
+    position: sticky;
+    top: 0;
+  }
 `
