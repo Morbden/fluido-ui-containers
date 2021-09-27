@@ -632,4 +632,18 @@ export const Box_ = styled('div')<BoxProps_>`
   overflow-y: $overflowY;
 
   display: #or($display, $d);
+
+  align-items: #or($alignItems, $items);
+  align-content: $alignContent;
+  justify-content: ($justifyItems, $justifyContent, $justify);
+  flex-wrap: #or($flexWrap, $wrap);
+  flex-direction: ($flexDirection, $direction);
+  flex: $flex;
+  flex-grow: $flexGrow;
+  flex-shrink: $flexShrink;
+  flex-basis: $flexBasis;
+
+  justify-self: $justifySelf;
+  align-self: $alignSelf;
+  order: $order;
 `
