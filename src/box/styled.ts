@@ -632,6 +632,4 @@ export const Box_ = styled('div')<BoxProps_>`
   overflow-y: $overflowY;
 
   display: #or($display, $d);
-
-  outline: 1px solid red;
 `
