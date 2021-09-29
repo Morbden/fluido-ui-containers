@@ -1,5 +1,5 @@
 import { Length, styled } from '@fluido/ui'
-import { Box, BoxProps } from '../box'
+import { Box, BoxProps } from '../old.index'
 
 export interface CenterProps_ extends BoxProps {
   maxWidth?: Length

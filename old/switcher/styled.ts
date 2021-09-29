@@ -1,5 +1,5 @@
 import { Length, styled } from '@fluido/ui'
-import { Box, BoxProps } from '../box'
+import { Box, BoxProps } from '../box/old.index'
 
 export interface SwitcherProps_ extends BoxProps {
   threshold?: Length

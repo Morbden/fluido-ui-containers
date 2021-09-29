@@ -1,5 +1,5 @@
 import { Length, makeNthChildSelector, styled } from '@fluido/ui'
-import { Box, BoxProps } from '../box'
+import { Box, BoxProps } from '../box/old.index'
 
 export interface CoverProps_ extends BoxProps {
   centered?: number | number[]

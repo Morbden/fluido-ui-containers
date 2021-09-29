@@ -1,5 +1,5 @@
 import { Length, makeNthChildSelector, styled } from '@fluido/ui'
-import { Box, BoxProps } from '../box'
+import { Box, BoxProps } from '../box/old.index'
 
 export interface StackProps_ extends BoxProps {
   gap?: Length
